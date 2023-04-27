@@ -7,8 +7,6 @@ pipeline{
         stage('Build'){
             steps{
                 git branch: 'main', url: 'https://github.com/vikashchaudhary16/docker-demo.git'
-                bat 'npm install'
-                bat 'npm build'
             }
         }
         stage('Deploy'){
