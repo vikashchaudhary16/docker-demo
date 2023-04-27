@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                git branch: 'main', url: 'https://github.com/vikashchaudhary16/docker-demo.git'
+                git branch: 'master', url: 'https://github.com/vikashchaudhary16/docker-demo.git'
             }
         }
         stage('Deploy'){
