@@ -8,7 +8,6 @@ pipeline{
             steps{
                 docker version
                 docker info
-                docker compose version
                 git branch: 'main', url: 'https://github.com/vikashchaudhary16/docker-demo.git'
             }
         }
