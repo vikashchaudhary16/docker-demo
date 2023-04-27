@@ -11,7 +11,7 @@ pipeline{
         }
         stage('Deploy'){
          steps{
-            bat 'docker build . -t -f dockerfile.txt reactapp'
+            bat 'docker build . -f dockerfile.txt -t reactapp'
             bat 'docker run --name reactContainer -d -p 3000:80 reactapp'
          }   
         }
